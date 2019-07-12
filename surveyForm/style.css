@@ -1,0 +1,208 @@
+ /* General styling */
+ body {
+    background-color: aqua;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* To center the title text */
+#title {
+    text-align: center;
+}
+
+/* General main section styiling */
+#main {
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 400px;
+    margin: auto;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+/* Center the description id text */
+#description {
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Stlying each label element */
+.name-label, 
+.email-label, 
+.number-label,
+.dropdown-label,
+.comment-label {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+/* Styling the dropdown id */
+#dropdown {
+    line-height: 2;
+}
+
+/* Styling the general fieldset element */
+fieldset {
+    border: none;
+    padding-left: 0;
+}
+
+/* Giving the input, select and textarea some styling */
+input, select, textarea {
+    border: 1px solid black;
+    line-height: 2.5;
+}
+
+/* Giving inputs (text, email, number) */
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 60%;
+    margin-top: 7px;
+}
+
+/* Styling placeholders for chrome */
+::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+/* Styling placeholders for mozilla */
+::-moz-placeholder {
+    padding-left: 10px;
+}
+
+/* Styling placeholders for microsoft edge */
+::-ms-placeholder {
+    padding-left: 10px;
+}
+
+/* Styling the submit button */
+#submit {
+    line-height: 2;
+    width: 40%;
+    cursor: pointer;
+    font-weight: 400;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+/* Styling the submit button when hovered on */
+#submit:hover {
+   background-color: blue;
+   color: white;
+}
+
+.footer {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    font-size: 20px;
+}
+
+/**
+******************************
+Adding Media Queries
+******************************
+**/
+
+@media only screen and (min-width: 900px) {
+    #main {
+       width: 800px;
+    }
+
+    .name-label, 
+    .email-label, 
+    .number-label,
+    .dropdown-label {
+       display: inline-block;
+       margin-bottom: 16px;
+    }
+
+    .name-label, 
+    .email-label, 
+    .number-label {
+      position: relative;
+      left: 30%;
+    }
+
+    .number-label {
+      position: relative;
+      left: 31.3%;
+    }
+
+    .dropdown-label {
+      position: relative;
+      left: 12%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+      width: 40%;
+      margin-top: 7px;
+    }
+
+    #survey-form label::after {
+      content: "";
+      padding-right: 5px;
+    }
+
+    #survey-form .number-label::after {
+      content: "";
+      padding-right: 5px;
+    }
+
+    #survey-form .dropdown-label::after {
+      content: "";
+      padding-right: 8px;
+    }
+
+    fieldset {
+        position: relative;
+        left: 15%;
+        margin-top: 2%;
+    }
+
+    #gender {
+        position: relative;
+        left: -1%;
+    }
+
+    .radio:nth-child(2), 
+    .checkbox:nth-child(2) {
+        position: absolute;
+        top: 2%;
+        left: 21%;
+    }
+
+    .radio:nth-child(4), 
+    .checkbox:nth-child(4) {
+        position: absolute;
+        top: 30%;
+        left: 21%;
+    }
+
+    .radio:nth-child(6), 
+    .checkbox:nth-child(6) {
+        position: absolute;
+        top: 60%;
+        left: 21%;
+    }
+
+    .comment-label {
+        position: relative;
+        left: 294px;
+        margin-top: 4%;
+        top: -20px;
+    }
+
+    .comment {
+        position: relative;
+        left: 155px;
+        top: 25px;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+<div id="main">
+    <p id="description">A general survey</p>
+    <form action="" id="survey-form">
+        <label for="name" class="name-label">Name:</label>
+        <input type="text" id="name" class="name-label" placeholder="Enter your name" required><br>
+        <label for="email" class="email-label">Email:</label>
+        <input type="email" id="email" class="email-label" placeholder="Enter your Email" required><br>
+        <label for="number" class="number-label">Age:</label>
+        <input type="number" id="number" class="number-label" placeholder="Age" min="1" max="3"><br>
+        <label for="dropdown" id="dropdown" class="dropdown-label">What is your Occupation?</label>
+        <select name="occupation"  class="dropdown-label">
+            <option value="teacher">Teacher</option>
+            <option value="doctor">Doctor</option>
+            <option value="nurse">Nurse</option>
+            <option value="developer">Developer</option>
+            <option value="engineer">Engineer</option>
+            <option value="others">Others</option>
+        </select><br>
+        <fieldset>
+            <legend id="job" class="legend-label">Do you like your Job?</legend>
+            <label for="yes" class="legend-label radio">
+                <input type="radio" name="job">Yes
+            </label><br>
+            <label for="no" class="legend-label radio">
+                <input type="radio" name="job">No
+            </label><br>
+            <label for="yes" class="legend-label radio">
+                <input type="radio" name="job">Indifferent
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend class="legend-label" id="gender">What are the genders?</legend>
+            <label for="male" class="legend-label checkbox">
+                <input type="checkbox" name="job" value="male">Male
+            </label><br>
+            <label for="female" class="legend-label checkbox">
+                <input type="checkbox" name="job" value="female">Female
+            </label><br>
+            <label for="indifferent" class="legend-label checkbox">
+                <input type="checkbox" name="job" value="indifferent">Indifferent
+            </label>
+        </fieldset>
+        <label for="comments"  class="comment">Enter Comments:</label>
+        <textarea name="comments" id="comment-box" class="comment-label" cols="45" rows="4" placeholder="Enter comments..."></textarea><br><br>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</div>
+
+<p class="footer"><b>Powered By</b> <i>Okwuidegbe Emmanuel Ikechukwu</i></p>
+
+</body>
+</html>
